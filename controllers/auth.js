@@ -120,10 +120,10 @@ exports.register = (req, res) => {
                                 
                     // send mail with defined transport object
                     let info = transporter.sendMail({
-                        from: '"Blogs " <id pass>', // sender address
+                        from: '"Confirmation " <jasmine02xy@gmail.com>', // sender address
                         to: req.body.email, // list of receivers
                         subject: "Registration Confirmation mail", // Subject line
-                        text: "Your registration was successfully ", // plain text body
+                        text: "Your registration was done successfully ", // plain text body
                         html: output, // html body
                       });
 
@@ -237,4 +237,3 @@ exports.logout = (req, res) => {
   });
   res.status(200).redirect("/index");
 };
-
