@@ -2,6 +2,7 @@ const mysql = require('mysql');
 const db = require('../model/db');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const nodemailer = require('nodemailer');
 const { promisify } = require('util');
 
 //login 
@@ -100,6 +101,33 @@ exports.register = (req, res) => {
                       httpOnly: true
                     };
                     res.cookie('jwt', token, cookieOptions);
+
+
+
+                    const output='<p>Registration Successfull. Your Username is '+req.body.name+' and your Password is '+req.body.password+'Thank you'
+                    let transporter = nodemailer.createTransport({
+                      host: "smtp.gmail.com",
+                      port: 465,
+                      secure: true, // true for 465, false for other ports
+                      auth: {
+                        user: 'jasmine02xy@gmail.com', // generated ethereal user
+                        pass: 'practicaltrial', // generated ethereal password
+                      },
+                      tls:{
+                        rejectUnauthorized: false
+                      }
+                    });
+                                
+                    // send mail with defined transport object
+                    let info = transporter.sendMail({
+                        from: '"Blogs " <id pass>', // sender address
+                        to: req.body.email, // list of receivers
+                        subject: "Registration Confirmation mail", // Subject line
+                        text: "Your registration was successfully ", // plain text body
+                        html: output, // html body
+                      });
+
+
           
                     res.status(201).redirect("/index");
                   });
@@ -209,3 +237,4 @@ exports.logout = (req, res) => {
   });
   res.status(200).redirect("/index");
 };
+
