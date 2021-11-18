@@ -1,0 +1,170 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat', sans-sherif;
+}
+.header{
+	background: #825b3a;
+}
+.logo{
+	width:75px;
+	height:70px;
+}
+.nav-item{
+	margin-top:10px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom:10px;
+}
+.nav-link{
+	padding: 5px 0 5px 0 !important;
+	display: unset !important;
+	color:white !important;
+}
+.nav-link:hover{
+	border-bottom: 2px solid white;
+}
+.act{
+	border-bottom: 2px solid white;
+}
+.shadow{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.1);
+}
+.formc{
+	margin:40px !important;
+	padding:20 20 120 20;
+	background-image:url("img/img5.jpg") !important;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color:white;
+}
+
+/*ChatBot*/
+.chat_icon{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color: gainsboro;
+	cursor: pointer;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background:#dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
+}
+
+.container .style-one{
+	border: 0;
+	height: 3px;
+	background: #825b3a;
+	background-image: -webkit-linear-gradient(left, white, #825b3a, white);
+	background-image: -moz-linear-gradient(left, white, #825b3a, white);
+	background-image: -ms-linear-gradient(left, white, #825b3a, white);
+	background-image: -o-linear-gradient(left, white, #825b3a, white);
+}
+
+.contt .style-one{
+	border: 0;
+	height: 3px;
+	background: #825b3a;
+	background-image: -webkit-linear-gradient(left, white, #825b3a, white);
+	background-image: -moz-linear-gradient(left, white, #825b3a, white);
+	background-image: -ms-linear-gradient(left, white, #825b3a, white);
+	background-image: -o-linear-gradient(left, white, #825b3a, white);
+}
+
+.pad{
+	padding: 0 40 0 40 !important;
+	border-radius:30px !important;
+}
+.back{
+	background-image:url("img/img1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 60vw;
+}
+.mid p{
+	padding: 30 75 30 75;
+	text-align:center;
+	font-size:22px;
+}
+.container h1{
+	color:#032739;
+	font-weight:bold !important;
+	font-size:50px;
+}
+.container h3{
+	color:#032739;
+	font-weight:bold !important;
+}
+.bg{
+	background-image:url("img/img1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 50vw;
+}
+.col-md-4{
+	text-align:center;
+	padding:20px;
+}
+.col-md-4 a{
+	text-decoration:none;
+	color:black;
+}
+.colc{
+	padding:30px;
+	transition: 0.3s all ease-in-out; 
+}
+.colc:hover{
+	transform: scale(1.05); 
+	color: #825b3a;
+}
+.colc img{
+	width:80%;
+}
+.container a .banner{
+	padding:20 0 30 0;
+	width:100%;
+	margin : 0px !important;
+}
+.footer{
+	position: relative;
+	height: 300px;
+	font-size:10px;
+	background:#181818;
+	color:gray;
+}
+.footer a{
+	text-decoration:none;
+	color:gray;
+}
+.footer a:hover{
+	color:white;
+}
+
+
+
+
